@@ -934,8 +934,8 @@ namespace mhcpp
 		auto varnames = centre.GetVariableNames();
 		for (auto& v : varnames)
 		{
-			T mx = from.GetMaxValue();
-			T mn = from.GetMinValue();
+			T mx = from.GetMaxValue(v);
+			T mn = from.GetMinValue(v);
 			if (abs(mx - mn) > (100. * std::numeric_limits<T>::epsilon())) {
 				double newVal = mhcpp::Reflect(from.GetValue(v), centre.GetValue(v), factor);
 				result.SetValue(v, newVal);
