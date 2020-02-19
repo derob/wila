@@ -10,7 +10,7 @@ options are: None(CMAKE_CXX_FLAGS or CMAKE_C_FLAGS used) Coverage Debug Release
 RelWithDebInfo MinSizeRel.")
 ENDIF()
 
-SET (VERSION 0.5.8)
+SET (VERSION 0.5.9)
 
 ## start setting
 SET (this_target wila)
@@ -37,6 +37,7 @@ SET(${this_target}_HEADER_FILES
     include/wila/random.hpp
     include/wila/sce.h
     include/wila/sce.hpp
+    include/wila/urs.hpp
     include/wila/utils.hpp
     include/wila/wrappers.hpp
 )
